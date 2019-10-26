@@ -9,12 +9,36 @@ $fa-font-path: "webfonts";
 @import "node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
 @import "node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
 
+//
+// clear
+//
+a, a:hover {
+    text-decoration: none;
+}
+
+// email
 .e-mail:before {
     content: attr(data-website) "\0040" attr(data-user);
     unicode-bidi: bidi-override;
     direction: rtl;
 }
 
+//
+// navigation
+//
 .navbar-toggler {
     border: 0 !important;
+}
+
+//
+// footer
+//
+footer {
+    a {
+        @extend .text-muted
+    }
+    
+    a:hover {
+        @extend .text-primary
+    }
 }
