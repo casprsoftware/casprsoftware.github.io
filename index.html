@@ -12,62 +12,72 @@
     <link rel="stylesheet" href="styles.min.css" />
 </head>
 <body>
-    <div class="container">
-        
-        <div class="row">
-            <div class="col-12">
-                <div class="alert alert-warning">
-                    <i class="fa fa-exclamation-triangle"></i>
-                    <span class="pl-2">We are working on the page..</span>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="/">CASPR</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">                
+                    <i class="fa fa-ellipsis-v"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#contact" class="nav-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="alert alert-info mt-3">
+                        <i class="fa fa-info"></i>
+                        <span class="pl-2">We are working on the page..</span>
+                    </div>
+
+                    <div class="jumbotron">
+                        <h1 class="display-4">CASPR Software</h1>                        
+                        <h4 class="text-uppercase mb-5 lead text-black-50">We do modern web applications and systems.</h4>
+                    </div>
+                    <p class="text-center mt-5 mb-5">Content is comming...</p>
                 </div>
             </div>
         </div>
+    </main>
 
-        <!-- header -->
-        <div class="row">
-            <div class="col-12 text-center">
-                <h1 class="display-4 mt-5">CASPR Software</h1>
-                <h4 class="text-uppercase mb-5 lead text-black-50">We do modern web applications and systems.</h4>
-                
-                
-                
+    <footer class="bg-light text-muted">
+        <div class="container p-3 p-md-5" id="#contact">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>CASPR Software OÜ</h5>
+                    <address>Sepapaja tn 6, Tallinn 15551, Estonia</address>
+                    <p><span>Registration Code: 14818299</span></p>
+                    <p><span>Email:</span> <span class="e-mail" data-user="olleh" data-website="moc.erawtfosrpsac"></span></p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Links</h5>
+                    <a href="https://github.com/casprsoftware"
+                        target="_blank">
+                        <span>GitHub</span>
+                    </a>
+                </div>
             </div>
-        </div>
 
-        <!-- links -->
-        <div class="row">
-            <div class="col-12 text-center">
-                <a href="https://github.com/casprsoftware" 
-                    class="btn btn-outline-primary border-0"
-                    target="_blank">
-                    <i class="fab fa-github fa-2x"></i><br/>
-                    <span>GitHub</span>
-                </a>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="text-center mt-5">&copy; CASPR Software 2019</p>
+                </div>
             </div>
         </div>
-        
-        <div class="row text-black-50">
-            <div class="col-12">
-                <h4 class="mt-5">CASPR Software OÜ</h4>
-            </div>
-        </div>
+    </footer>
 
-        <div class="row text-black-50">
-            <div class="col-md-4">
-                <h5>Address:</h5>
-                <address>
-                    Sepapaja tn 6, Tallinn 15551, Estonia
-                </address>
-            </div>
-            <div class="col-md-4">
-                <h5>Registration Code:</h5>
-                <p>14818299</p>
-            </div>
-            <div class="col-md-4">
-                <h5>Email:</h5>
-                <span class="e-mail" data-user="olleh" data-website="moc.erawtfosrpsac"></span>
-            </div>
-        </div>
-    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
