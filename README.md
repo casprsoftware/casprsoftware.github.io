@@ -2,5 +2,5 @@
 
 This is our website. You'll find here:
 
-- What we actualy do
+- What we do
 - Contact information
