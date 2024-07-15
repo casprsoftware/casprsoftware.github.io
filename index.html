@@ -12,34 +12,16 @@
     <link rel="stylesheet" href="styles.min.css" />
 </head>
 <body class="bg-light">
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="/">CASPR</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">                
-                    <i class="fa fa-ellipsis-v"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a href="#contact" class="nav-link">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </header>
-
-    <main>
+    
+    <main style="height: max-content;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                    
-                    <div class="jumbotron bg-white shadow-sm mb-5 mt-0 mt-md-5">
+                    <div class="jumbotron bg-white shadow-sm mb-15 mt-5 mt-md-5 text-center">
                         <h1 class="display-4">CASPR Software</h1>
-                        <h4 class="text-uppercase mb-5 lead text-black-50">Cloud application professional.</h4>
-                        <a href="#contact" class="btn btn-lg btn-primary"><i class="fa fa-envelope"></i> Contact</a>
+                        <h4 class="text-uppercase m-5 lead text-black-50">Building software solutions</h4>
+                        <a href="#" class="btn btn-lg btn-primary" id="btn_contact" data-user="hello" data-website="casprsoftware.com"><i class="fa fa-envelope"></i> Contact</a>
                     </div>
                     
                 </div>
@@ -54,7 +36,7 @@
                     <h5>CASPR Software OÜ</h5>
                     <address class="mb-0">Sepapaja 6,<br/>Tallinn 15551,<br/>Estonia</address>
                     <p class="mb-0"><span class="font-weight-bold">Registry Code: </span><span>14818299</span></p>
-                    <p class="mb-0"><span class="fa fa-envelope"></span> <span class="e-mail" data-user="olleh" data-website="moc.erawtfosrpsac"></span></p>
+                    <p class="mb-0"><span class="fa fa-envelope"></span> <span id="email" class="e-mail" data-user="olleh" data-website="moc.erawtfosrpsac"></span></p>
                 </div>
                 <div class="col-md-4">
                     <h5 class="pt-3 pt-md-0">Links</h5>
@@ -67,7 +49,7 @@
 
             <div class="row">
                 <div class="col-md-12">
-                    <p class="text-center mt-5">&copy; CASPR Software 2021</p>
+                    <p class="text-center mt-5">&copy; CASPR Software <span id="year"></span></p>
                 </div>
             </div>
         </div>
@@ -76,5 +58,12 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        var yearElement = document.getElementById("year");
+        yearElement.textContent = new Date().getFullYear();
+
+        var btnContact = document.getElementById("btn_contact");
+        btnContact.setAttribute("href", "mailto:" + btnContact.getAttribute("data-user") + "@" + btnContact.getAttribute("data-website"));
+    </script>
 </body>
 </html>
